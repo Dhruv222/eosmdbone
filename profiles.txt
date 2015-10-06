@@ -1,0 +1,51 @@
+
+Car
+highway up to track/grade1
+access: vehicle, motor_vehicle, motorcar
+surface:
+unpaved, gravel etc. slow down
+grass, sand, etc. unroutable
+maxspeed
+lanes=1 slows down
+oneway
+
+Bike (City)
+highway up to track/grade2, cycleway, footways (pushing)
+highways with cycleway preferred
+quiet ways preferred over primary/secondary
+path with
+missing bicycle=yes/designated to be avoided
+sac_scale or mtb:scale makes it unroutable
+access: vehicle, bicycle
+surface: paved surface types strongly preferred
+oneway (and cycleway=opposite)
+
+Bike (Touring)
+highway up to track/grade5, cycleway, footways (pushing)
+highways with cycleway preferred
+quiet ways preferred over primary/secondary
+path with
+foot/bicycle=yes/designated
+sac_scale or mtb:scale>0 makes it unroutable
+access: vehicle, bicycle
+surface: paved surfaces slightly preferred
+oneway (and cycleway=opposite)
+
+Foot (City)
+all highway types except motorway and trunk
+highways with sidewalk preferred
+quiet ways preferred over primary/secondary
+path with
+foot/bicycle=yes/designated
+sac_scale up to hiking
+access: vehicle, foot
+surface: paved surfaces preferred
+
+Hiking
+all highway types except motorway and trunk
+highways with sidewalk preferred
+quiet ways preferred over primary/secondary
+all paths
+sac_scale up to demanding_mountain_hiking
+access: vehicle, foot
+surface: unpaved surfaces preferred, slow down for sand and gravel
